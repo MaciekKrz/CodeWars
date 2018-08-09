@@ -13,4 +13,4 @@ def string_rotation(string):
 
 
 print(string_rotation('Hello'))
-
+print(string_rotation('This is major problem'))
