@@ -8,12 +8,9 @@ getcontext().prec = 100
 
 
 def is_prime(x):
-    if x == 1:
-        return False
-    else:
-        for i in range(2, (x//2+1)):
-            if x % i == 0:
-                return False
+    for i in range(2, (x//2+1)):
+        if x % i == 0:
+            return False
     return True
 
 
@@ -26,4 +23,4 @@ def voodoo(num):
         return False
 
 
-print(voodoo(2))
+print(voodoo(1))
