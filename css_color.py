@@ -6,7 +6,7 @@ import re
 
 
 def css_color(line):
-    match = re.findall(r'#[a-fA-F0-9]{3,6}\b[^\n]', line)
+    match = re.findall(r'#[a-fA-F0-9]{3,6}\b[^\n\s]', line)
     if len(match) == 1:
         print(match[0][:-1])
     elif len(match) > 1:
