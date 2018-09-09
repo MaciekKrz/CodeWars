@@ -33,7 +33,6 @@ x =[]
 l = 0
 sorted_arr = sorted(arr, key=lambda arr: arr[k])
 for i, value in enumerate(sorted_arr):
-    # print(i)
     for j in value:
         l += 1
         print(j, end='{}'.format('\n'if int(l)%int(m) == 0 else ' '))
